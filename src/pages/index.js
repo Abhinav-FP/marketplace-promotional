@@ -6,6 +6,7 @@ import Features from "@/component/features";
 import Howitwork from "@/component/howitwork";
 import Download from "@/component/download";
 import Workwithus from "@/component/workwithus";
+import Howwork from "@/component/howwork";
 ;
 
 
@@ -18,7 +19,8 @@ export default function Home() {
       <Features />
 
       {/* Howitwork */}
-      <Howitwork />
+      {/* <Howitwork /> */}
+      <Howwork/>
 
       {/* Clients */}
       <TrustedClientsSection />

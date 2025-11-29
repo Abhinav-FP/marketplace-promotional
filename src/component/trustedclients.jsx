@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { UserRound, ChevronLeft, ChevronRight } from "lucide-react";
 import { National_Park } from "next/font/google";
+import Image from "next/image";
 
 const nationalpark = National_Park({
     subsets: ['latin']
@@ -79,10 +80,14 @@ export default function TrustedClientsSection() {
                                 className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4 py-6"
                             >
                                 <div className="border border-gray-200 bg-gray-100 rounded-2xl p-6 text-left space-y-4 h-full">
-                                    <div className="w-12 h-12 bg-blue-500/10 backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-white/20">
+                                    {/* <div className="w-12 h-12 bg-blue-500/10 backdrop-blur-md rounded-full flex items-center justify-center shadow-sm border border-white/20">
                                         <UserRound className="text-blue-700 h-6 w-6" />
-                                    </div>
-
+                                    </div> */}
+                                    <Image
+                                        src={"/avtar.png"}
+                                        height={50}
+                                        width={50}
+                                    />
                                     <p className="text-xl text-gray-700 font-poppins">
                                         {data.description}
                                     </p>

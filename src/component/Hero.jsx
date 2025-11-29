@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
 
           {/* Highlights Cards */}
-          <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
+          <div className=" grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
             
             {/* Card 1 */}
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all">
@@ -55,12 +55,12 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex items-center gap-5 mt-8">
-            <button className="border border-white text-white text-lg font-medium rounded-full font-poppins py-3 px-8 hover:bg-white/10 transition">
+            {/* <button className="border border-white text-white text-lg font-medium rounded-full font-poppins py-3 px-8 hover:bg-white/10 transition">
               Explore now
             </button>
             <button className="bg-blue-900 text-white text-lg font-medium rounded-full font-poppins py-3 px-8 hover:bg-blue-800 transition">
               Download now
-            </button>
+            </button> */}
           </div>
 
         </div>
