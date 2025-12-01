@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Workwithus() {
     return (
-        <div className="mx-auto max-w-6xl flex flex-col items-center justify-center py-16 px-4">
+        <div id='contact' className="scroll mx-auto max-w-6xl flex flex-col items-center justify-center py-16 px-4">
 
             {/* Heading */}
             <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-montserrat">

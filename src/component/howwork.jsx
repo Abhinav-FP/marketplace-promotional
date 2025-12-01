@@ -2,9 +2,32 @@ import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
+const card = [
+    {
+        image: "/vendor.png",
+        heading: "Select the Vendor",
+        description: "Browse or visit any partner store and choose the vendor from whom you want to avail a service or offer."
+    },
+    {
+        image: "/coupon.png",
+        heading: "Select Offers",
+        description: "View the available discounts for that vendor and pick the offer that suits your needs."
+    },
+    {
+        image: "/approve.jpeg",
+        heading: "Vendor Approves",
+        description: "The vendor reviews and approves the offer instantly to confirm the final payable amount."
+    },
+    {
+        image: "/payment.png",
+        heading: "Pay Less",
+        description: "Your discount is applied immediately — pay the reduced price and enjoy your savings."
+    }
+]
+
 export default function Howwork() {
     return (
-        <div className='mx-auto max-w-6xl flex flex-col items-center text-center space-y-4 px-4'>
+        <div id='work' className='scroll mx-auto max-w-6xl flex flex-col items-center text-center space-y-4 px-4'>
             <h1 className="text-3xl md:text-5xl font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-montserrat">
                 How It Works
             </h1>
@@ -12,42 +35,49 @@ export default function Howwork() {
                 Follow these easy steps to redeem offers and enjoy smart savings effortlessly.
             </p>
             <div className='space-y-4'>
-                {/* First Card */}
-                <div className='w-full flex justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10'>
-                    <div className='w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
-                        <Image
-                            src={"/mobile3.png"}
-                            height={400}
-                            width={400}
-                            className='w-96'
-                        />
-                        <div className='absolute top-8 right'>
-                            <Image
-                                src={"/vendor.png"}
-                                height={138}
-                                width={138}
-                                alt=''
-                                className=' rounded-2xl'
-                            />
+                {card && card?.map((data, i) => (
+                    <>
+                        {/* First Card */}
+                        <div className={`sticky top-0 w-full flex flex-col ${i % 2 === 0 ? "md:flex-row-reverse":"md:flex-row "} justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10`}>
+                            <div className='w-full md:w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
+                                <Image
+                                    src={"/mobile3.png"}
+                                    height={400}
+                                    width={400}
+                                    className='w-96'
+                                />
+                                <div className='absolute top-8 right'>
+                                    <Image
+                                        src={data.image}
+                                        height={138}
+                                        width={138}
+                                        alt=''
+                                        className=' rounded-2xl'
+                                    />
+                                </div>
+                            </div>
+                            <div className='w-full md:w-1/2 text-start space-y-2 p-4 md:p-10'>
+                                <p className=' font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-poppins'>
+                                    Step-{i+1}
+                                </p>
+                                <h1 className='text-xl md:text-2xl font-semibold font-poppins'>
+                                    {data.heading}
+                                </h1>
+                                <p className='text-normal md:text-xl text-gray-600 font-poppins'>
+                                    {data.description}
+                                </p>
+                                <button className='flex items-center gap-2 text-sm md:text-md bg-blue-900 text-white rounded-lg py-2 px-6 font-poppins'>
+                                    Get Started
+                                    <ArrowRight className='h-5 w-5' />
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div className='w-1/2 text-start space-y-2 px-10'>
-                        <p className=' font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-poppins'>Step-01</p>
-                        <h1 className='text-2xl font-semibold font-poppins'>
-                            Select the Vendor
-                        </h1>
-                        <p className='text-xl text-gray-600 font-poppins'>
-                            Browse or visit any partner store and choose the vendor from whom you want to avail a service or offer.
-                        </p>
-                        <button className='flex items-center gap-2 text-md bg-blue-900 text-white rounded-lg py-2 px-6 font-poppins'>
-                            Get Started
-                            <ArrowRight className='h-5 w-5' />
-                        </button>
-                    </div>
-                </div>
+                    </>
+                ))}
+
                 {/*Second Card */}
-                <div className='w-full flex justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10'>
-                    <div className='w-[50%] text-start space-y-2  px-10'>
+                {/* <div className='sticky top-0 w-full flex flex-col md:flex-row justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10'>
+                    <div className='w-full md:w-1/2 text-start space-y-2  p-10'>
                         <p className=' font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-poppins'>
                             Step-02
                         </p>
@@ -62,10 +92,10 @@ export default function Howwork() {
                             <ArrowRight className='h-5 w-5' />
                         </button>
                     </div>
-                    <div className='w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
+                    <div className='w-full md:w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
                         <Image
                             src={"/mobile3.png"}
-                            height={401}
+                            height={400}
                             width={402}
                             className='w-96'
                         />
@@ -79,10 +109,10 @@ export default function Howwork() {
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* Third Card */}
-                <div className='w-full flex justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10'>
-                    <div className='w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
+                {/* <div className='sticky top-0 w-full flex flex-col md:flex-row justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10'>
+                    <div className='w-full md:w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
                         <Image
                             src={"/mobile3.png"}
                             height={400}
@@ -99,7 +129,7 @@ export default function Howwork() {
                             />
                         </div>
                     </div>
-                    <div className='w-1/2 text-start space-y-2 px-10'>
+                    <div className='w-full md:w-1/2 text-start space-y-2 p-10'>
                         <p className=' font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-poppins'>
                             Step-03
                         </p>
@@ -114,10 +144,10 @@ export default function Howwork() {
                             <ArrowRight className='h-5 w-5' />
                         </button>
                     </div>
-                </div>
+                </div> */}
                 {/* Forth Card */}
-                <div className='w-full flex justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10'>
-                    <div className='w-[50%] text-start space-y-2 px-10'>
+                {/* <div className='sticky top-0 w-full flex flex-col md:flex-row justify-center items-center border border-gray-200 rounded-2xl bg-gray-100  gap-10'>
+                    <div className='w-full md:w-1/2 text-start space-y-2 p-10'>
                         <p className=' font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-poppins'>
                             Step-04
                         </p>
@@ -132,7 +162,7 @@ export default function Howwork() {
                             <ArrowRight className='h-5 w-5' />
                         </button>
                     </div>
-                    <div className='w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
+                    <div className='w-full md:w-1/2 relative bg-white rounded-2xl flex items-center justify-center'>
                         <Image
                             src={"/mobile3.png"}
                             height={400}
@@ -149,7 +179,7 @@ export default function Howwork() {
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
