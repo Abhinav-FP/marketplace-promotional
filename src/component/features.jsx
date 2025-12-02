@@ -46,11 +46,13 @@ export default function Features() {
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8">
                 {feature && feature?.map((data) => (
                     <div className="hover:bg-gray-100 flex flex-col items-start gap-2 border border-gray-200 rounded-lg p-4 md:p-8">
-                        <div className="bg-blue-600/5 rounded-lg  text-blue-900 p-2">                            
+                        <div className="bg-blue-600/5 rounded-lg  text-blue-900 p-2">
                             {data.icon}
                         </div>
                         <h3 className="text-xl md:text-2xl font-normal font-poppins">{data.heading}</h3>
                         <p className="text-lg md:text-xl text-gray-700 font-poppins">{data.description}</p>
+                        {/* Divider */}
+                        <div className="w-12 h-1 bg-blue-900 rounded-full mt-2"></div>
                     </div>
                 ))}
             </div>

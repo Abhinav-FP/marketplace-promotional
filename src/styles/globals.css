@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff; /* Light background */
-  --foreground: #171717; /* Dark text */
+  --background: #ffffff;
+  /* Light background */
+  --foreground: #171717;
+  /* Dark text */
 }
 
 @theme inline {
@@ -20,4 +22,20 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
 }
