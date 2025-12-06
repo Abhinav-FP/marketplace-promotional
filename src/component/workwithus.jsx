@@ -7,7 +7,7 @@ export default function Workwithus() {
         firstName: "",
         lastName: "",
         email: "",
-        phone: "",
+        phone: "+91 ",
         role: "",
         message: ""
     });
@@ -150,11 +150,12 @@ export default function Workwithus() {
                         <div className="flex flex-col">
                             <label className="font-medium font-poppins">Phone</label>
                             <input
-                                type="text"
+                                type="tel"
                                 value={formData.phone}
                                 onChange={(e) => {
                                     setFormData({ ...formData, phone: e.target.value })
                                 }}
+                                maxLength={14}
                                 placeholder="Enter phone"
                                 className="border border-gray-300 rounded-xl p-3 mt-1 outline-none transition font-poppins"
                                 required
