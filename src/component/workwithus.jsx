@@ -60,7 +60,7 @@ export default function Workwithus() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
                         {/* Join As */}
-                        <div className="col-span-1 md:col-span-2">
+                        <div className="bg-gray-50 border border-gray-200 shadow-sm col-span-1 md:col-span-2">
                             <label className="text-lg font-poppins font-medium mb-2 block">
                                 I want to join as*
                             </label>
