@@ -56,11 +56,11 @@ export default function Workwithus() {
                 </div> */}
 
                 {/* Form Section */}
-                <form onSubmit={handleSubmit} className="w-full md:w-1/2 border border-gray-200 rounded-3xl p-8 shadow-sm space-y-5 bg-white">
+                <form onSubmit={handleSubmit} className="w-full md:w-1/2 bg-gray-50 border border-gray-200 rounded-3xl p-8 shadow-sm space-y-5 ">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
                         {/* Join As */}
-                        <div className="bg-gray-50 border border-gray-200 shadow-sm col-span-1 md:col-span-2">
+                        <div className=" col-span-1 md:col-span-2">
                             <label className="text-lg font-poppins font-medium mb-2 block">
                                 I want to join as*
                             </label>
