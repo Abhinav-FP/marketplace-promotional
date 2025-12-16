@@ -9,10 +9,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="relative w-full z-50">
+    <nav className="relative w-full font-poppins z-50">
 
       {/* Navbar Wrapper */}
-      <div className="w-full bg-white/95 backdrop-blur-md rounded-none md:rounded-full shadow-md flex items-center justify-between px-6 md:px-12 py-3 md:mt-4">
+      <div className="container mx-auto w-full bg-white/95 backdrop-blur-md rounded-none md:rounded-full shadow-md flex items-center justify-between px-6 md:px-12 py-3 md:mt-4">
 
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-10 text-sm font-semibold">
+        <div className="hidden md:flex items-center gap-10 text-lg font-medium">
           <Link href="#hero" className="text-gray-800 hover:text-blue-500 transition">
             Home
           </Link>

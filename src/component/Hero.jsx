@@ -15,11 +15,10 @@ export default function Hero() {
       </div>
 
       {/* Dark overlay */}
-      <div className="bg-black/40 w-full min-h-screen flex flex-col md:flex-row justify-center items-center px-4 md:px-0">
-
+      <div className=" bg-black/40 w-full min-h-screen flex flex-col md:flex-row justify-center items-center px-4 md:px-0">
         {/* Left */}
         <div className="w-full md:w-1/2 px-4 md:px-6 pt-36 pb-20 space-y-6 md:space-y-8 text-center md:text-left">
-          
+
           <p className="mx-auto md:mx-0 w-72 md:w-80 flex items-center justify-center gap-2 border border-white/10 text-blue-300 bg-white/10 py-2 px-4 rounded-full font-poppins text-sm md:text-base">
             <Leaf className="text-blue-300 h-5 w-5" />
             Trusted by customers everywhere
@@ -35,7 +34,7 @@ export default function Hero() {
             hassle-free savings every time you shop.
           </p>
 
-          <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 font-poppins">
             <Link
               href="/"
               className="bg-white flex items-center rounded-md gap-2 py-2 px-4 w-60 md:w-auto justify-center"
@@ -49,7 +48,7 @@ export default function Hero() {
 
             <Link
               href="/"
-              className="bg-white flex items-center rounded-md gap-2 py-2 px-4 w-60 md:w-auto justify-center"
+              className="bg-white flex items-center rounded-md gap-2 py-2 px-4 w-60 md:w-auto justify-center font-poppins"
             >
               <FaApple className="text-black h-10 w-10 md:h-12 md:w-12" />
               <div className="text-black">
@@ -70,25 +69,25 @@ export default function Hero() {
               <div className="relative">
                 <Image
                   src={"/mobile3.png"}
-                  height={400}
-                  width={380}
+                  height={500}
+                  width={500}
                   alt=""
-                  className="w-full h-full object-contain"
+                  className="w-21.5 md:w-90 object-contain"
                 />
-                <div className="absolute top-5 sm:top-6 left-19 sm:left-20">
+                <div className="absolute top-5 sm:top-6 left-19 sm:left-23">
                   <Image
                     src={"/vendor.png"}
                     height={200}
                     width={200}
                     alt=""
-                    className="w-21.5 sm:w-32 rounded-xl"
+                    className="w-21.5 sm:w-26 rounded-xl"
                   />
                 </div>
               </div>
             </div>
 
             {/* Avatars */}
-            <div className="absolute top-58 sm:top-60 md:top-65 left-50 sm:left-44 md:left-60 z-50 bg-white/90 border-blue-400 rounded-2xl flex flex-col justify-center items-center text-center p-2 w-32 sm:w-40">
+            <div className="absolute top-58 sm:top-60 md:top-65 left-45 sm:left-44 md:left-60 z-50 bg-white/90 border-blue-400 rounded-2xl flex flex-col justify-center items-center text-center p-2 w-32 sm:w-40">
               <Image
                 src={"/avtars.png"}
                 height={400}
@@ -102,7 +101,7 @@ export default function Hero() {
             </div>
 
             {/* Approval */}
-            <div className="absolute -bottom-10 sm:bottom-10 right-50 sm:right-40 md:right-60 z-50 bg-white/90 text-center rounded-2xl p-2 md:p-4 flex flex-col items-center w-36 sm:w-48 space-y-1">
+            <div className="absolute -bottom-10 sm:bottom-10 right-45 sm:right-40 md:right-60 z-50 bg-white/90 text-center rounded-2xl p-2 md:p-4 flex flex-col items-center w-36 sm:w-48 space-y-1">
               <CheckCircle className="text-green-600 h-6 w-6 md:h-8 md:w-8" />
               <h3 className="text-sm md:text-base font-poppins">INSTANT APPROVAL</h3>
               <p className="text-xs md:text-sm text-gray-600 font-poppins">
@@ -111,7 +110,7 @@ export default function Hero() {
             </div>
 
             {/* #1 card */}
-            <div className="absolute bottom-60 sm:bottom-56 md:bottom-65 right-50 sm:right-32 md:right-55 z-50 bg-white/90 text-center rounded-2xl p-2 md:p-4 w-36 sm:w-44">
+            <div className="absolute bottom-60 sm:bottom-56 md:bottom-65 right-45 sm:right-32 md:right-55 z-50 bg-white/90 text-center rounded-2xl p-2 md:p-4 w-36 sm:w-44">
               <div className="flex items-center justify-center gap-2">
                 <Image
                   src={"/trophy.png"}
@@ -127,6 +126,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
 
       </div>
     </div>

@@ -27,11 +27,11 @@ const card = [
 
 export default function Howwork() {
     return (
-        <div id='work' className='scroll mx-auto max-w-6xl flex flex-col items-center text-center space-y-4 px-4'>
+        <div id='work' className='scroll mx-auto max-w-6xl flex flex-col items-center text-center px-4'>
             <h1 className="text-3xl md:text-5xl font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-montserrat">
                 How It Works
             </h1>
-            <p className="text-lg md:text-2xl text-gray-700 mb-10 font-poppins">
+            <p className="text-lg md:text-2xl text-gray-800 mb-10 font-poppins">
                 Follow these easy steps to redeem offers and enjoy smart savings effortlessly.
             </p>
             <div className='space-y-4'>
@@ -57,7 +57,7 @@ export default function Howwork() {
                                 </div>
                             </div>
                             <div className='w-full md:w-1/2 text-start space-y-2 p-4 md:p-10'>
-                                <p className=' font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-poppins'>
+                                <p className='text-lg bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-poppins'>
                                     Step-{i+1}
                                 </p>
                                 <h1 className='text-xl md:text-2xl font-semibold font-poppins'>

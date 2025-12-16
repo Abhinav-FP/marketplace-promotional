@@ -39,11 +39,13 @@ export default function Features() {
         <div id='features' className="scroll mx-auto max-w-6xl flex flex-col justify-center items-center px-4">
             <div className="text-center">
                 <h1 className="text-3xl md:text-5xl font-semibold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-montserrat">
-                    Smart Features Designed for Effortless Savings
+                    Smart Features for Easy Savings
                 </h1>
-                <p className="text-lg md:text-2xl text-gray-700 mb-10 font-montserrat">Simple tools, transparent offers, and smooth redemption that put customers first.</p>
+                <p className="text-lg md:text-2xl text-gray-700 mt-2 font-poppins">
+                    Simple tools, transparent offers, and smooth redemption that put customers first.
+                </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8 mt-10">
                 {feature && feature?.map((data) => (
                     <div className="hover:bg-gray-100 flex flex-col items-start gap-2 border border-gray-200 rounded-lg p-4 md:p-8">
                         <div className="bg-blue-600/5 rounded-lg  text-blue-900 p-2">

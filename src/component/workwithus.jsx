@@ -34,15 +34,15 @@ export default function Workwithus() {
 
             {/* Heading */}
             <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-b from-blue-950 via-blue-900 to-gray-900 bg-clip-text text-transparent font-montserrat">
-                Work With Us
+                Partner With Us
             </h1>
 
-            <p className="max-w-3xl text-lg md:text-2xl text-center text-gray-600 mt-4 mb-12 font-poppins">
+            <p className="text-lg md:text-2xl text-gray-700 mt-2 font-poppins">
                 Partner with us as a Vendor or Sales Partner — fill in your details and we’ll reach out soon.
             </p>
 
             {/* Main Content */}
-            <div className="flex flex-col md:flex-row justify-center items-start gap-12 w-full">
+            <div className="flex flex-col md:flex-row justify-center items-start gap-12 mt-10 w-full">
 
                 {/* Left Section
                 <div className=" w-full md:w-1/2">
