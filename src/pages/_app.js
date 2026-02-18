@@ -10,8 +10,8 @@ export default function App({ Component, pageProps }) {
     <main>
       {/* <Navbar/> */}
       <Navbar scrollFns={scrollFns} />
-      <Component {...pageProps} setScrollFunction={setScrollFns} />
-      <Footer/>
+      <Component {...pageProps} setScrollFunction={setScrollFns} scrollFns={scrollFns} />
+      <Footer scrollFns={scrollFns}/>
     </main>
   )
 }

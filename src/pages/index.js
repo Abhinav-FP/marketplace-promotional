@@ -5,7 +5,7 @@ import Workwithus from "@/component/workwithus";
 import Howwork from "@/component/howwork";
 import { useEffect, useRef } from "react";
 
-export default function Home({setScrollFunction}) {
+export default function Home({setScrollFunction, scrollFns}) {
   const heroRef = useRef(null);
   const featureRef = useRef(null);
   const workRef = useRef(null);
@@ -36,13 +36,13 @@ export default function Home({setScrollFunction}) {
       <Features ref={featureRef}/>
 
       {/* Howitwork */}
-      <Howwork ref={workRef}/>
+      <Howwork ref={workRef} scrollFns={scrollFns}/>
 
       {/* Clients */}
       <TrustedClientsSection ref={clientRef}/>
 
       {/* Download now */}
-      <Download ref={downloadRef}/>
+      <Download ref={downloadRef} />
 
       {/* Work with us */}
       <Workwithus ref={contactRef}/>

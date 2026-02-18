@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function Footer() {
+export default function Footer({scrollFns}) {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 md:px-0 py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
@@ -24,24 +24,24 @@ export default function Footer() {
           <h1 className="text-lg font-semibold mb-4 font-poppins">Quick Links</h1>
           <ul className="space-y-2 font-poppins">
             <li>
-              <Link href="#hero" className="hover:text-blue-400 transition">
+              <button onClick={() => scrollFns?.hero?.()} className="hover:text-blue-400 transition cursor-pointer">
                 Home
-              </Link>
+              </button>
             </li>
             <li>
-              <Link href="#features" className="hover:text-blue-400 transition">
+              <button onClick={() => scrollFns?.feature?.()} className="hover:text-blue-400 transition cursor-pointer">
                 Features
-              </Link>
+              </button>
             </li>
             <li>
-              <Link href="#work" className="hover:text-blue-400 transition">
+              <button onClick={() => scrollFns?.work?.()} className="hover:text-blue-400 transition cursor-pointer">
                 How it works
-              </Link>
+              </button>
             </li>
             <li>
-              <Link href="#contact" className="hover:text-blue-400 transition">
+              <button onClick={() => scrollFns?.contact?.()} className="hover:text-blue-400 transition cursor-pointer">
                 Contact
-              </Link>
+              </button>
             </li>
           </ul>
         </div>
